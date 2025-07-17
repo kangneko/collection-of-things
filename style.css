@@ -1,0 +1,81 @@
+		*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    margin-top: 150px;
+    background-color: rosybrown;
+}
+
+details {
+    cursor: help;
+}
+
+.indent {
+    margin-left: 20px;
+}
+
+summary::marker {
+  color: pink;
+  content: "☁︎ ";
+  font-size: 20px;
+}
+
+li::marker {
+    color: ; 
+    font-size: ; 
+    content: ""; 
+}
+
+.indent {
+  margin-left: 20px;
+}
+
+summary::marker {
+  color: pink;
+  content: "☁︎ ";
+  font-size: 20px;
+}
+
+li::marker {
+  color: initial; 
+  font-size: initial; 
+  content: ""; 
+}
+
+img {
+  width: 280px;
+  border: 3px dotted #444;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.photo:nth-child(1) { transform: rotate(-3deg); }
+.photo:nth-child(2) { transform: rotate(2deg); }
+.photo:nth-child(3) { transform: rotate(-1.5deg); }
+.photo:nth-child(4) { transform: rotate(1deg); }
+
+.photo.large {
+  width: 300px;
+}
+
+.photo:hover {
+  transform: rotate(0deg) scale(1.03);
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+
+
+
+
